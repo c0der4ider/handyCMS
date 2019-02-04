@@ -1,0 +1,33 @@
+p#notice = notice
+
+p
+  strong Author:
+  = @post.author_id
+p
+  strong Content:
+  = @post.content
+p
+  strong Title:
+  = @post.title
+p
+  strong Except:
+  = @post.except
+p
+  strong Status:
+  = @post.status
+p
+  strong Comment status:
+  = @post.comment_status
+p
+  strong Ping status:
+  = @post.ping_status
+p
+  strong Slug:
+  = @post.slug
+p
+  strong Comment count:
+  = @post.comment_count
+
+=> link_to 'Edit', edit_post_path(@post)
+'|
+=< link_to 'Back', posts_path

@@ -1,0 +1,21 @@
+= form_for @taxonomy do |f|
+  - if @taxonomy.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@taxonomy.errors.count, "error")} prohibited this taxonomy from being saved:"
+      ul
+        - @taxonomy.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :term_id
+    = f.number_field :term_id
+  .field
+    = f.label :taxonomy
+    = f.text_field :taxonomy
+  .field
+    = f.label :description
+    = f.text_area :description
+  .field
+    = f.label :count
+    = f.number_field :count
+  .actions = f.submit

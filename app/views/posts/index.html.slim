@@ -1,0 +1,37 @@
+h1 Listing posts
+
+table
+  thead
+    tr
+      th Author
+      th Content
+      th Title
+      th Except
+      th Status
+      th Comment status
+      th Ping status
+      th Slug
+      th Comment count
+      th
+      th
+      th
+
+  tbody
+    - @posts.each do |post|
+      tr
+        td = post.author_id
+        td = post.content
+        td = post.title
+        td = post.except
+        td = post.status
+        td = post.comment_status
+        td = post.ping_status
+        td = post.slug
+        td = post.comment_count
+        td = link_to 'Show', post
+        td = link_to 'Edit', edit_post_path(post)
+        td = link_to 'Destroy', post, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New Post', new_post_path

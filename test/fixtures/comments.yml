@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  post_id: 1
+  author_id: 1
+  author_name: MyString
+  author_email: MyString
+  author_ip: MyString
+  content: MyText
+  approved: MyString
+
+two:
+  post_id: 1
+  author_id: 1
+  author_name: MyString
+  author_email: MyString
+  author_ip: MyString
+  content: MyText
+  approved: MyString

@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  author_id: 1
+  content: MyText
+  title: MyString
+  except: MyString
+  status: MyString
+  comment_status: MyString
+  ping_status: MyString
+  slug: MyString
+  comment_count: 1
+
+two:
+  author_id: 1
+  content: MyText
+  title: MyString
+  except: MyString
+  status: MyString
+  comment_status: MyString
+  ping_status: MyString
+  slug: MyString
+  comment_count: 1

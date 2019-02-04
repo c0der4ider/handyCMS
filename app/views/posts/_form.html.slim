@@ -1,0 +1,36 @@
+= form_for @post do |f|
+  - if @post.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@post.errors.count, "error")} prohibited this post from being saved:"
+      ul
+        - @post.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :author_id
+    = f.number_field :author_id
+  .field
+    = f.label :content
+    = f.text_area :content
+  .field
+    = f.label :title
+    = f.text_field :title
+  .field
+    = f.label :except
+    = f.text_field :except
+  .field
+    = f.label :status
+    = f.text_field :status
+  .field
+    = f.label :comment_status
+    = f.text_field :comment_status
+  .field
+    = f.label :ping_status
+    = f.text_field :ping_status
+  .field
+    = f.label :slug
+    = f.text_field :slug
+  .field
+    = f.label :comment_count
+    = f.number_field :comment_count
+  .actions = f.submit

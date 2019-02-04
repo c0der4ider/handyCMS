@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Name:
+  = @option.name
+p
+  strong Value:
+  = @option.value
+p
+  strong Autoload:
+  = @option.autoload
+
+=> link_to 'Edit', edit_option_path(@option)
+'|
+=< link_to 'Back', options_path
